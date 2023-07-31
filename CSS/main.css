@@ -1,0 +1,382 @@
+body
+{
+ background-color: white;
+  margin-left:20px;
+ margin-top:10px;
+ margin-right:20px;
+ margin-bottom:20px;
+ font-family:Arial, Helvetica, sans-serif;
+
+ 
+}
+.container
+{
+  margin-left:20px;
+  margin-right:20px;
+}
+.gcsesearch
+{
+  background-color: #999fbd;
+}
+h2{
+  color:black;
+  text-align:center;
+}
+
+.logocontainer
+{
+  width:800;
+  height:75;
+  background-color:rgb(178, 178, 214);
+  margin-left:20px;
+  margin-top: 20px;
+  margin-right:50px;
+}
+img
+{
+margin-left:20px;
+margin-top:20px;
+height:50px;
+width:150px;
+}
+.button
+{
+    size: 1px;
+    cursor: pointer;
+    width: 16em;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration:underline;
+    margin-top: 40px;
+    margin-left:20px;
+    
+
+}
+
+.form
+{
+    float: right;
+}
+
+h4{
+    color:black;
+    text-align:left;
+    margin-left:20px;
+    margin-right:50px;
+  
+}
+h1
+{
+    color:blue;
+}
+.v
+{
+  margin:10px;
+  width:30%;
+  height:400px;
+}
+
+
+p1
+{
+  color:black;
+}
+input{
+    width:30%;
+}
+a:visited
+{
+    color:blue;
+}
+a:hover
+{
+    color:purple;
+}
+
+.slide
+{
+  width:700px;
+  height:400px;
+}
+.display-container
+{
+  margin-left:200px;
+}
+
+
+
+  .callout {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+  background: rgb(162, 201,  204); 
+  }
+  
+  .callout-header {
+    padding: 25px 15px;
+  
+    font-size: 20px;
+    color: black;
+  }
+  
+  .callout-container {
+    padding: 15px;
+    background-color:white;
+    color: black
+  }
+  
+  .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .closebtn:hover {
+    color: lightgrey;
+  }
+
+   .login
+  {
+    float:right;
+    margin-right:50px;
+    margin-top:2px;
+  }
+  .button3
+  {
+    padding:5px;
+    color:blue;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+   
+  }
+  .button4
+  {
+    background-color:rgb(178, 178, 214);
+    color:blue;
+    cursor: pointer;
+    border:none;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+ .form-popup 
+ {
+   display: none;
+   position: fixed;
+   top: 0;
+   right: 15px;
+   border: 3px solid #f1f1f1;
+   z-index: 9;
+ }
+ .form-container
+  {
+   max-width: 200px;
+   padding: 10px;
+   background-color: rgb(151, 166, 194);
+ }
+ .form-container input[type=text], .form-container input[type=password] {
+   width: 60%;
+   padding: 15px;
+   margin: 5px 0 10px 0;
+   border: none;
+   background: #f1f1f1;
+ }
+ .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+   background-color: rgb(181, 204, 245);
+   outline: none;
+ }
+ .form-container .btn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 16px 20px;
+   border: none;
+   cursor: pointer;
+   width: 100%;
+   margin-bottom:10px;
+   opacity: 0.8;
+ }
+ .form-container .cancel 
+ {
+   background-color: red;
+ }
+ .form-container .btn:hover, .open-button:hover {
+   opacity: 1;
+ }
+
+
+/*mobile potrait*/
+@media only screen and (max-width: 600px)
+{
+  .v{
+    width:100%;
+  }
+  .container
+  {
+    width:auto;
+    margin-left:0px;
+   
+  }
+  .logocontainer
+  {
+  width:100%;
+ 
+  }
+  .display-container
+{
+  width:auto;
+  margin-left:0px;
+  display:block;
+}
+.slide
+{
+  width:100%;
+  padding:5px;
+}
+.deals
+{
+  width:auto;
+  
+} 
+h1
+{
+  size:0px;
+}
+.column
+    {
+      width:80%;
+      margin-left:0px;
+      margin-top:0px;
+      height: auto;
+      margin-right:0px;
+      box-shadow:none;
+    }
+    
+    .img2
+    {
+      height:50px;
+      width:50px;
+    }
+    .row
+    {
+     margin-left:0px;
+    }
+}
+@media screen and (max-width: 768px)
+/* For mobile phones: */
+  { 
+    .v{
+      width:100%;
+    }
+    .container
+    {
+      width:auto;
+      margin-left:0px;
+    }
+    .logocontainer
+    {
+    width:100%;
+    }
+    .display-container
+  {
+    width:100%;
+    margin-left:0px;
+  }
+  .slide
+  {
+    width:100%;
+    padding:5px;
+  }
+  .deals
+  {
+    width:100%;
+  }
+  .column
+     {
+       width:auto;
+       margin-left:0px;
+     }
+    
+    body
+    {
+      margin-left:0px;
+    }
+    .logocontainer
+    {
+      width:100%;
+    }
+
+   
+  }
+
+@media only screen and (min-width:768px) and (max-width:834px)
+{
+  .slide
+  {
+   width:100%;
+   margin-left:0px;
+  }
+  .display-container
+  {
+    margin-left:0px;
+  }
+  .container
+  {
+    margin-left:0px;
+  }
+  .column
+  {
+    width:80%;
+    margin-left:0px;
+    margin-top:0px;
+    margin-right:20px;
+    height: auto;
+  } 
+}
+@media only screen and (min-width:834px) and (max-width:1280px)
+  {
+    
+    .column
+    {
+      width:auto;
+      margin-left:50px;
+      height:auto;
+    }
+    .container
+  {
+    width:100%;
+    margin-left:0px;
+  }
+  .display-container
+  {
+    width:auto;
+    margin-left:0px;
+  }
+  .slide
+ {
+   width:100%;
+   margin-left:0px;
+ }
+  }
+
+
+
+  
+
+ 
+
+  
