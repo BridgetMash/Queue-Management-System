@@ -55,7 +55,11 @@ width:150px;
     
 
 }
-
+footer
+{
+text-align: center;
+margin-top:50px;
+}
 .form
 {
     float: right;
@@ -79,7 +83,6 @@ h1
   height:400px;
 }
 
-
 p1
 {
   color:black;
@@ -99,7 +102,7 @@ a:hover
 .slide
 {
   width:700px;
-  height:400px;
+  height:300px;
 }
 .display-container
 {
@@ -218,7 +221,6 @@ a:hover
    opacity: 1;
  }
 
-
 /*mobile potrait*/
 @media only screen and (max-width: 600px)
 {
@@ -242,16 +244,7 @@ a:hover
   margin-left:0px;
   display:block;
 }
-.slide
-{
-  width:100%;
-  padding:5px;
-}
-.deals
-{
-  width:auto;
-  
-} 
+
 h1
 {
   size:0px;
@@ -296,15 +289,7 @@ h1
     width:100%;
     margin-left:0px;
   }
-  .slide
-  {
-    width:100%;
-    padding:5px;
-  }
-  .deals
-  {
-    width:100%;
-  }
+  
   .column
      {
        width:auto;
@@ -325,11 +310,7 @@ h1
 
 @media only screen and (min-width:768px) and (max-width:834px)
 {
-  .slide
-  {
-   width:100%;
-   margin-left:0px;
-  }
+  
   .display-container
   {
     margin-left:0px;
@@ -366,11 +347,7 @@ h1
     width:auto;
     margin-left:0px;
   }
-  .slide
- {
-   width:100%;
-   margin-left:0px;
- }
+  
   }
 
 
