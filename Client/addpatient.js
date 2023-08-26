@@ -6,7 +6,12 @@ document.addEventListener('DOMContentLoaded', function () {
             last_name: document.getElementById('last-name').value,
             dob: document.getElementById('dob').value,
             address: document.getElementById('address').value,
-            phone_number: document.getElementById('phone-number').value
+            phone_number: document.getElementById('phone-number').value,
+            policy_number: document.getElementById('policy-number').value,
+            reason_for_visit: document.getElementById('reason-for-visit').value,
+            allergies: document.getElementById('allergies').value,
+            emergency_number: document.getElementById('emergency-number').value,
+            gp: document.getElementById('gp').value,
         };
 
         fetch('http://localhost:3003/addpatient', {
@@ -26,4 +31,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 alert('An error occurred.');
             });
     });
+     // Cancel button event handler
+     document.getElementById('cancel-button').addEventListener('click', function() {
+        document.getElementById('first-name').value = '';
+        document.getElementById('last-name').value = '';
+        document.getElementById('dob').value = '';
+        document.getElementById('address').value = '';
+        document.getElementById('phone-number').value = '';
+        document.getElementById('policy-number').value= '' ,
+        document.getElementById('reason-for-visit').value= '',
+        document.getElementById('allergies').value= '',
+        document.getElementById('emergency-number').value= '',
+        document.getElementById('gp').value= ''
+            
+    });
 });
+ 
+
