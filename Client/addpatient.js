@@ -7,11 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
             dob: document.getElementById('dob').value,
             address: document.getElementById('address').value,
             phone_number: document.getElementById('phone-number').value,
-            policy_number: document.getElementById('policy-number').value,
-            reason_for_visit: document.getElementById('reason-for-visit').value,
-            allergies: document.getElementById('allergies').value,
-            emergency_number: document.getElementById('emergency-number').value,
-            gp: document.getElementById('gp').value,
+            symptoms: document.getElementById('symptoms').value,
+            temperature: document.getElementById('temperature').value
+            
         };
 
         fetch('http://localhost:3003/addpatient', {
@@ -38,12 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('dob').value = '';
         document.getElementById('address').value = '';
         document.getElementById('phone-number').value = '';
-        document.getElementById('policy-number').value= '' ,
-        document.getElementById('reason-for-visit').value= '',
-        document.getElementById('allergies').value= '',
-        document.getElementById('emergency-number').value= '',
-        document.getElementById('gp').value= ''
-            
+        document.getElementById('symptoms').value= '' ,
+        document.getElementById('temperature').value= ''
+                 
     });
 });
  
