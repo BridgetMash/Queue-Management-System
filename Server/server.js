@@ -18,7 +18,7 @@ const pool = mysql.createPool({
     database: 'queuesystem'
 });
 
-app.post('/addpatient', async (req, res) => {
+app.post('/register', async (req, res) => {
     const {
         first_name,
         last_name,
@@ -56,7 +56,7 @@ app.post('/addpatient', async (req, res) => {
 
 app.get('/queue', async (req, res) => {
     try {
-        const [rows] = await pool.query('SELECT * FROM queue order by position desc');
+        const [rows] = await pool.query('SELECT * FROM queue order by position asc');
 
         res.status(200).send({
             'status': 'OK',
@@ -125,6 +125,7 @@ app.post('/increasePosition', async (req, res) => {
         conn.release();
     }
 });
+
 app.post('/decreasePosition', async (req, res) => {
     const {
         unique_number
