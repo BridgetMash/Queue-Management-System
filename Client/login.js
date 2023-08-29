@@ -14,7 +14,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         .then(data => {
             if (data.status === 'OK') {
                 // Redirect to the registration or handle successful login
-                window.location.href = '/register.html';
+                window.location.href = '/addpatient.html';
             } else {
                 alert('Invalid login credentials.');
             }

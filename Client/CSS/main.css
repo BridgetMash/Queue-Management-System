@@ -7,100 +7,161 @@ body {
 }
 
 .container {
-  width: 80%;
-  max-width: 800px;
-  margin: 20px auto;
+  max-width: 1100px;
+  margin: auto;
   padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
 }
 
-/* Header Styling */
-header {
+.logocontainer {
+  background-color: #0D3B66;
+  padding: 15px;
   text-align: center;
-  background-color: #50b3a2;
-  color: white;
-  padding: 20px 0;
-}
-.display-container {
-  width: 100%; /* You can adjust this to fit your layout */
-  text-align: center; /* Center the image horizontally */
-  margin: 0 auto; /* Center the container itself if needed */
-  padding: 10px; /* Add some padding around the image */
+  color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-decoration-color: #ffffff;
 }
 
-.picture {
-  max-width: 100%; /* Ensure the image doesn’t exceed the container's width */
-  height: auto; /* Maintain the image's aspect ratio */
-  border: 2px solid #ccc; /* Optional border around the image */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for a nice effect */
+.menu h2 {
+  margin: 0;
+  padding: 0;
 }
 
-
-/* Navigation Bar Styling */
 .navbar {
   display: flex;
+  background-color: #ffffff;
   justify-content: space-around;
-  background-color: #333;
-  padding: 10px;
+  padding: 15px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-.navbar .button {
-  color: white;
+.navbar a {
   text-decoration: none;
-  padding: 8px 15px;
+  color: #0D3B66;
+  padding: 10px;
+  font-weight: bold;
 }
 
-.navbar .button:hover {
-  background-color: #50b3a2;
+.navbar a:hover {
+  background-color: #0D3B66;
+  color: #ffffff;
+}
+
+.display-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.display-container img.slide {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.flushy { 
+  display: inline-block;
+  background-color: #0D3B66;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.flushy:hover {
+  background-color: #0a2d4e;
+}
+
+h6 {
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+}
+
+p {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
 }
 
 /* Main Content Styling */
+
+header {
+  background-color: #003366;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
 main {
-  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  background-color: #003366;
+  color: #FFFFFF;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background-color: #e6f3ff;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+li strong {
+  color: #003366;
 }
 
 section {
   margin-bottom: 20px;
 }
 
-section h2 {
-  color: #50b3a2;
+section#contact-us {
+  background-color: #f1f1f1;
+  padding: 10px;
+  border-radius: 4px;
 }
 
-section ul {
-  list-style: none;
-  padding-left: 0;
+address {
+  margin-top: 10px;
 }
 
-section ul li {
-  margin-bottom: 10px;
+address a {
+  color: #003366;
 }
 
-strong {
-  color: #333;
-}
-
-/* Contact Section */
-#contact-us a {
-  color: #50b3a2;
-  text-decoration: none;
-}
-
-#contact-us a:hover {
-  text-decoration: underline;
-}
-
-/* Footer Styling */
 footer {
+  background-color: #003366;
+  color: #FFFFFF;
   text-align: center;
-  background-color: #333;
-  color: white;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+  padding: 1rem;
+  margin-top: 20px;
 }
+
+footer p {
+  margin: 0;
+  padding: 0.5rem;
+}
+
 
 /* Login Form Styling */
 #login-form {
@@ -134,26 +195,34 @@ footer {
 #queue-table td {
   padding: 10px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #a51212;
 }
 
 #queue-table th {
-  background-color: #50b3a2;
+  background-color: #003366;
   color: white;
 }
 
 /* Form Styling */
-.container {
+.container1 {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color:#AF4C5D ;
+  border: 1px solid #ddd;
+}
+.container2 {
   width: 80%;
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ddd;
-  background-color: #f9f9f9;
+  background-color: #50b3a2;
 }
 
 h1, h2 {
-  color: #333;
+  color: white;
 }
 
 .form-group {
@@ -197,28 +266,30 @@ textarea {
   resize: vertical;
   min-height: 100px;
 }
-.blinking {
-  animation: blinkingText 1.2s infinite;
-}
 
-@keyframes blinkingText {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
 .eye-catching {
   font-size: 14px;
   font-weight: bold;
-  background-color: #367f80;
+  background-color: #50b3a2;
   padding: 10px;
   border: 2px solid #50b3a2;
   border-radius: 5px;
-  text-decoration: none; /* Remove underline */
-  color: black; /* Text color */
+  text-decoration: none; 
+  color: white; /* Text color */
   transition: background-color 0.3s ease-in-out; /* Add transition effect */
 }
 
 /* Change background on hover */
 .eye-catching:hover {
-  background-color: #50b3a2;
+  background-color: #AF4C5D;
+  
 }  
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}

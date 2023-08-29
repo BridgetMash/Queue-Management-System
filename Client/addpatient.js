@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
             address: document.getElementById('address').value,
             phone_number: document.getElementById('phone-number').value,
             symptoms: document.getElementById('symptoms').value,
-            temperature: document.getElementById('temperature').value
-            
+            temperature: document.getElementById('temperature').value           
         };
 
         fetch('http://localhost:3003/addpatient', {
@@ -28,18 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error('Error:', error);
                 alert('An error occurred.');
             });
+                    
     });
-     // Cancel button event handler
-     document.getElementById('cancel-button').addEventListener('click', function() {
+    // Cancel button event handler
+    document.getElementById('cancel-button').addEventListener('click', function() {
         document.getElementById('first-name').value = '';
         document.getElementById('last-name').value = '';
         document.getElementById('dob').value = '';
         document.getElementById('address').value = '';
         document.getElementById('phone-number').value = '';
-        document.getElementById('symptoms').value= '' ,
-        document.getElementById('temperature').value= ''
-                 
+        document.getElementById('symptoms').value= '' ;
+        document.getElementById('temperature').value= ''       
     });
 });
  
-

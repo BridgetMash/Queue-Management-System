@@ -1,70 +1,170 @@
+/* Reset some default browser styles */
+body, h1, h2, ul, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Make a background color for the entire document */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #555;
+  line-height: 1.6;
+  background: #f4f4f4;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-h1 {
+/* Style the header */
+header {
+  background: #50b3a2;
+  color: white;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 1em;
+  font-size: 1.5em;
 }
 
+/* Style for main content area */
+main {
+  padding: 20px;
+  margin: 15px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Section headers */
+h2 {
+  background: #333;
+  color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Unordered list styles */
+ul {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Unordered list items */
+ul li {
+  margin: 8px 0;
+}
+
+/* Form styles */
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
+label {
+  display: inline-block;
+  width: 150px;
   font-weight: bold;
 }
 
-.form-group input,
-.form-group textarea {
+input[type="text"],
+input[type="date"],
+textarea,
+input[type="password"] {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
+  margin-top: 5px;
   border: 1px solid #ddd;
-  border-radius: 3px;
-  font-size: 16px;
+  border-radius: 4px;
 }
 
-.form-group button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  background-color: #007BFF;
+button {
+  background: #50b3a2;
   color: #fff;
-  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
   cursor: pointer;
-  margin-top: 20px;
+  border-radius: 4px;
 }
 
-.form-group button:hover {
-  background-color: #0056b3;
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 1em 0;
+  background: #333;
+  color: #fff;
 }
 
-/* Table styles */
+/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
 }
 
-th,
-td {
-  padding: 15px;
+th, td {
+  border: 1px solid #ccc;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
 }
 
 th {
-  background-color: #007BFF;
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Staff login form */
+#login-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.eye-catching {
+  display: inline-block;
+  margin-top: 20px;
+  background: #50b3a2;
   color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.display-container {
+  width: 100%; /* You can adjust this to fit your layout */
+  text-align: center; /* Center the image horizontally */
+  margin: 0 auto; /* Center the container itself if needed */
+  padding: 10px; /* Add some padding around the image */
+}
+/* Basic styles for the link */
+.flushy {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+
+  /* Change the following colors as per your theme */
+  background-color: #313aea;  /* Button color */
+  color: white;               /* Text color */
+}
+
+/* Hover effect for the link */
+.flushy:hover {
+  background-color: #e6e3f1;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.flushy:active {
+  transform: translateY(0);
+}
+.blinking {
+  animation: blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
 }
