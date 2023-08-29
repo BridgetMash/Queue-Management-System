@@ -178,7 +178,7 @@ footer p {
 
 #login-form button {
   padding: 10px 20px;
-  background-color: #50b3a2;
+  background-color:  #007bff;
   color: white;
   border: none;
   cursor: pointer;
@@ -209,7 +209,7 @@ footer p {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color:#AF4C5D ;
+  background-color:#f5f5f5 ;
   border: 1px solid #ddd;
 }
 .container2 {
@@ -250,7 +250,7 @@ button {
 }
 
 button[type="submit"] {
-  background-color: #50b3a2;
+  background-color: #007bff;
   color: white;
 }
 
@@ -270,26 +270,58 @@ textarea {
 .eye-catching {
   font-size: 14px;
   font-weight: bold;
-  background-color: #50b3a2;
+  background-color: #007bff;
   padding: 10px;
-  border: 2px solid #50b3a2;
+  border: 2px solid white;
   border-radius: 5px;
   text-decoration: none; 
-  color: white; /* Text color */
-  transition: background-color 0.3s ease-in-out; /* Add transition effect */
+  color: white; 
+  transition: background-color 0.3s ease-in-out; 
 }
 
 /* Change background on hover */
 .eye-catching:hover {
-  background-color: #AF4C5D;
+  background-color: #11b9df;
   
 }  
-ul.breadcrumb li {
-  display: inline;
-  font-size: 18px;
+.breadcrumb {
+  padding: 10px 0;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
 }
-ul.breadcrumb li+li:before {
-  padding: 8px;
-  color: black;
-  content: "/\00a0";
+
+.breadcrumb li {
+  display: inline;
+  font-size: 16px;
+  color: #6c757d; 
+}
+
+.breadcrumb li + li:before {
+  content: ">";
+  margin: 0 10px;
+  color: #6c757d; 
+}
+
+.breadcrumb a {
+  color: #007bff; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+  color: #0056b3; 
+}
+
+.breadcrumb li:last-child {
+  font-weight: bold;
+}
+
+.button1{
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
 }

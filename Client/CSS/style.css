@@ -1,10 +1,10 @@
-/* Reset some default browser styles */
+
 body, h1, h2, ul, p {
   margin: 0;
   padding: 0;
 }
 
-/* Make a background color for the entire document */
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -126,12 +126,12 @@ tr:nth-child(even) {
   border-radius: 4px;
 }
 .display-container {
-  width: 100%; /* You can adjust this to fit your layout */
-  text-align: center; /* Center the image horizontally */
-  margin: 0 auto; /* Center the container itself if needed */
-  padding: 10px; /* Add some padding around the image */
+  width: 100%; 
+  text-align: center; 
+  margin: 0 auto; 
+  padding: 10px; 
 }
-/* Basic styles for the link */
+
 .flushy {
   display: inline-block;
   padding: 10px 20px;
@@ -144,9 +144,9 @@ tr:nth-child(even) {
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 
-  /* Change the following colors as per your theme */
-  background-color: #313aea;  /* Button color */
-  color: white;               /* Text color */
+  
+  background-color: #313aea;  
+  color: white;               
 }
 
 /* Hover effect for the link */
