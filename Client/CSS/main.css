@@ -325,3 +325,82 @@ textarea {
   color: white;
   text-decoration: none;
 }
+/* ... Existing CSS ... */
+
+/* Media Queries */
+/* For tablets */
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  #login-form {
+    max-width: 100%;
+  }
+
+  #queue-table {
+    font-size: 0.8em;
+  }
+
+  .container1, .container2 {
+    max-width: 100%;
+  }
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a, .flushy {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  main {
+    max-width: 100%;
+    padding: 0.2rem;
+  }
+
+  h1, h2, h6 {
+    font-size: 1.4em;
+  }
+
+  p, li, .form-group input, .form-group textarea {
+    font-size: 0.9em;
+  }
+
+  #login-form {
+    max-width: 100%;
+  }
+
+  #queue-table {
+    font-size: 0.7em;
+  }
+
+  .container1, .container2 {
+    max-width: 100%;
+  }
+}
